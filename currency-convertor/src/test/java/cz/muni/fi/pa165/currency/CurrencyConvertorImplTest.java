@@ -7,8 +7,18 @@ public class CurrencyConvertorImplTest {
 
     @Test
     public void testConvert() {
+	CurrencyConvertorImpl testObj;
+
+	Currency czk = Currency.getInstance("CZK");
+	Currency eur = Currency.getInstance("Eur");
+
+	BigDecimal amount("100.0");
+
+	testObj.convert(eur, czk, amount)
+	
+
         // Don't forget to test border values and proper rounding.
-        fail("Test is not implemented yet.");
+        //fail("Test is not implemented yet.");
     }
 
     @Test
